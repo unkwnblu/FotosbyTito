@@ -179,7 +179,7 @@ export default function Home() {
                 fill 
                 className={clsx(
                     "object-contain drop-shadow-2xl transition-all duration-500",
-                    isDarkMode ? "brightness-100 contrast-125 saturate-0 invert" : "brightness-0 opacity-90" 
+                    // Removed filters to keep original logo colors
                 )} 
             />
         </motion.div>
