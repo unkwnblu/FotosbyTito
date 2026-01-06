@@ -104,7 +104,7 @@ export default function Home() {
   const bgClass = isDarkMode ? 'bg-black' : 'bg-gray-100';
   const textSubClass = isDarkMode ? 'text-gray-200' : 'text-stone-600'; 
   const textMutedClass = isDarkMode ? 'text-gray-300' : 'text-stone-500';
-  const backgroundImage = isDarkMode ? '/cinematic-bg.png' : '/marble-bg.png';
+  const backgroundImage = '/cinematic-bg.png';
   
   const overlayGradient = isDarkMode 
     ? 'bg-gradient-to-b from-black/50 via-transparent to-black/80' 
@@ -129,7 +129,7 @@ export default function Home() {
                 <div 
                     className={clsx(
                         "absolute inset-0 bg-cover bg-center transition-all duration-700",
-                        isDarkMode ? "opacity-70 mix-blend-screen" : "opacity-100 mix-blend-multiply" 
+                        isDarkMode ? "opacity-70 mix-blend-screen" : "opacity-30 mix-blend-multiply filter contrast-125" 
                     )}
                     style={{ backgroundImage: `url('${backgroundImage}')` }}
                 />
